@@ -1,2 +1,2 @@
-# kubernetscript
+Study Scripts for kubernets
 

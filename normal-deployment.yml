@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-dep
+  labels:
+    app: webserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webserver
+  template:
+    metadata:
+      labels:
+        app: webserver
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        limits:
+          memory: "500Mi"
+          cpu: "500m"
+        requests:
+          memory: "200Mi"
+          cpu: "200m"

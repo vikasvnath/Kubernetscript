@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: my-service   #Service name and this name must be same 
+subsets:
+  - addresses:
+      - ip: 10.40.0.2   # ip address of the pod
+    ports:
+      - port: 80
