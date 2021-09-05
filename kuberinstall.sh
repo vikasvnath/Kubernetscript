@@ -31,7 +31,10 @@ cat > /etc/docker/daemon.json <<EOF
 }
 EOF
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> da295225a6ddc3efa501d8bba1cdcb40a8b04486
 systemctl daemon-reload
 systemctl restart docker
 apt-mark hold kubelet kubeadm kubectl
